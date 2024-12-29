@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { WebsocketService } from './services/websocket.service';
 
 @Component({
@@ -7,12 +7,8 @@ import { WebsocketService } from './services/websocket.service';
   styleUrl: './app.component.css',
   standalone: false,
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'front-angular-socket-poc';
 
   constructor(public swService: WebsocketService) {}
-
-  ngOnInit(): void {
-    console.log('hola');
-  }
 }
